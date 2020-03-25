@@ -283,11 +283,56 @@ h1, h2, h3, h4, h5, h6 {
 /*Portfolio*/
 .portfolio {
     display: grid;
-    grid-template-columns: 380px auto 380px;
+    grid-template-columns: 380px 1fr 380px;
     grid-template-rows: auto;
     justify-items: center;
 }
 
+.portfolio_item {
+    background-color: #e9e9e9;
+    width: 380px;
+    position: relative;
+}
+
+.portfolio_item:hover .portfolio_img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.portfolio_item:hover .portfolio_img img {
+    opacity: 1;
+}
+
+.portfolio_img {
+    background: #999999;
+    transition: transform .2s linear;
+}
+
+.portfolio_img img {
+    display: block;
+    transition: opacity .1s linear;
+    opacity: .6;
+}
+
+.portfolio_btn {
+    margin: 60px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 12px 20px;
+    border: 3px solid #10c9c3;
+    background-color: #10c9c3;
+    font-size: 12px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background .1s linear, color .1s linear;
+}
+
+.portfolio_btn:hover {
+    border: 3px solid #10c9c3;
+    background-color: #ffffff;
+    color: #10c9c3;
+}
 
 
 
