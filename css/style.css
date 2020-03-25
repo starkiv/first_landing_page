@@ -283,9 +283,9 @@ h1, h2, h3, h4, h5, h6 {
 /*Portfolio*/
 .portfolio {
     display: grid;
-    grid-template-columns: 380px 1fr 380px;
+    grid-template-columns: 380px 380px 380px;
     grid-template-rows: auto;
-    justify-items: center;
+    justify-content: space-between;
 }
 
 .portfolio_item {
