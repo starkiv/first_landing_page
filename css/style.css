@@ -156,7 +156,10 @@ h1, h2, h3, h4, h5, h6 {
 /*Section*/
 .section {
     padding: 100px 0;
+}
 
+.section-gray {
+    background-color: #f8f8f8;
 }
 
 .section_header {
@@ -280,6 +283,158 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
+/*We do*/
+
+.wedo {
+    display: flex;
+}
+
+.wedo_item {
+    width: 50%;
+}
+
+.wedo_photo {
+    border: 2px solid #e9e9e9;
+}
+
+/*Accordion*/
+
+.accordion_item {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.accordion_item.active
+.accordion_content {
+    display: block;
+}
+
+.accordion_item.active
+.accordion_header {
+    border-bottom-color: #e5e5e5;
+}
+
+.accordion_item.active
+.accordion_header:after {
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
+}
+
+.accordion_header {
+    padding: 15px 15px;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.accordion_header:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.accordion_content {
+    padding: 15px 20px;
+    display: none;
+
+    font-size: 15px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.accordion_title {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/*Reviews*/
+
+.reviews {
+    padding: 0 110px;
+    position: relative;
+}
+
+.reviews_item {
+    padding-left: 205px;
+    position: relative;
+}
+
+.reviews_photo {
+    border: 2px solid #10c9c3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.reviews_text {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+}
+
+.reviews_author {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.reviews_author:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 3px;
+    margin-right: 20px;
+
+    background-color: #10c9c3;
+}
+
+.reviews_btn {
+    font-size: 0;
+    color: transparent;
+
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.reviews_btn:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #ccc;
+    border-left: 2px solid #ccc;
+}
+
+.reviews_btn_prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.reviews_btn_next {
+    right: 0;
+    transform: rotate(135deg);
+}
+
 /*Portfolio*/
 .portfolio {
     display: grid;
@@ -292,10 +447,6 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #e9e9e9;
     width: 380px;
     position: relative;
-}
-
-.portfolio_item:hover .portfolio_img {
-    transform: translate3d(-10px, -10px, 0);
 }
 
 .portfolio_item:hover .portfolio_img img {
@@ -333,6 +484,20 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ffffff;
     color: #10c9c3;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
