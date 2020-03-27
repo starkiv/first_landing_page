@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*About*/
 .cards {
-    margin-top: 80px;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
@@ -454,55 +454,6 @@ h1, h2, h3, h4, h5, h6 {
     transform: rotate(135deg);
 }
 
-/*Portfolio*/
-.portfolio {
-    display: grid;
-    grid-template-columns: 380px 380px 380px;
-    grid-template-rows: auto;
-    justify-content: space-between;
-}
-
-.portfolio_item {
-    background-color: #e9e9e9;
-    width: 380px;
-    position: relative;
-}
-
-.portfolio_item:hover .portfolio_img img {
-    opacity: 1;
-}
-
-.portfolio_img {
-    background: #999999;
-    transition: transform .2s linear;
-}
-
-.portfolio_img img {
-    display: block;
-    transition: opacity .1s linear;
-    opacity: .6;
-}
-
-.portfolio_btn {
-    margin: 60px;
-    display: inline-block;
-    vertical-align: top;
-    padding: 12px 20px;
-    border: 3px solid #10c9c3;
-    background-color: #10c9c3;
-    font-size: 12px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background .1s linear, color .1s linear;
-}
-
-.portfolio_btn:hover {
-    border: 3px solid #10c9c3;
-    background-color: #ffffff;
-    color: #10c9c3;
-}
 
 /*Social*/
 
@@ -536,7 +487,58 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #f8f8f8;
 }
 
+/*Works*/
 
+.works {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: #f8f9f9;
+}
+
+.works_item {
+    position: relative;
+    background: #999999;
+}
+
+.works_item:hover .works_img {
+    opacity: .6;
+}
+
+.works_item:hover .works_info {
+    opacity: 1;
+}
+
+.works_img {
+    display: block;
+    transition: opacity .2s linear;
+}
+
+.works_info {
+    width: 100%;
+    padding: 15%;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+}
+
+.works_title {
+    margin-bottom: 5px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.works_text {
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
 
 
 
