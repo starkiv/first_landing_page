@@ -607,10 +607,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer_col_first {
     width: 65%;
+    padding: 0 10px;
 }
 
 .footer_col_second {
     width: 30%;
+    padding: 0 10px;
+
 }
 
 .footer_logo {
@@ -945,6 +948,23 @@ h1, h2, h3, h4, h5, h6 {
     /*Works*/
 
     .works_col {
+        width: 100%;
+    }
+
+    /*Subscribe*/
+
+    .subscribe {
+        flex-wrap: wrap;
+        max-width: none;
+    }
+
+    .subscribe_input {
+        margin-bottom: 10px;
+        border-right: 1px solid #e7e7e7;
+    }
+
+    .subscribe_input,
+    .subscribe_btn {
         width: 100%;
     }
 }
